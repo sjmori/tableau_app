@@ -91,5 +91,6 @@ if __name__ == '__main__':
 	#context = ('c:/users/user/logreg_app/app_folder/key.crt', 'c:/users/user/logreg_app/app_folder/key.key')	
 
 	#application.run(port=12344, ssl_context=context)
+	port = int(os.environ.get("PORT", 5000))
+    	application.run(host='0.0.0.0', port=port)
 	
-	application.run()
