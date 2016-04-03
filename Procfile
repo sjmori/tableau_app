@@ -1,1 +1,1 @@
-web: gunicorn tableau_app.wsgi --log-file -
+web: gunicorn logreg-app.wsgi --log-file -
